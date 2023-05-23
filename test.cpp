@@ -215,7 +215,7 @@ int main()
     float current;
     int dc;
 
-    motor::InitMotor("/dev/cu.usbserial-0001", 115200, serial::Timeout::simpleTimeout(3000));
+    motor::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
     motor::startMotor();
 
     // for(int i = 0; i < 5; i++){

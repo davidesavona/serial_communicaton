@@ -1,2 +1,2 @@
-/usr/bin/ar qc libserial.a CMakeFiles/serial.dir/serial.cc.o CMakeFiles/serial.dir/list_ports_linux.cc.o CMakeFiles/serial.dir/unix.cc.o
-/usr/bin/ranlib libserial.a
+/usr/bin/aarch64-linux-gnu-ar qc libserial.a CMakeFiles/serial.dir/serial.cc.o CMakeFiles/serial.dir/list_ports_linux.cc.o CMakeFiles/serial.dir/unix.cc.o
+/usr/bin/aarch64-linux-gnu-ranlib libserial.a

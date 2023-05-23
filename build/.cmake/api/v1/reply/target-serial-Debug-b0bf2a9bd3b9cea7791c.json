@@ -43,7 +43,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -52,25 +52,17 @@
 			"includes" : 
 			[
 				{
-					"path" : "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build"
+					"path" : "/home/pi/Desktop/serial_communicaton/build"
 				},
 				{
-					"path" : "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial"
+					"path" : "/home/pi/Desktop/serial_communicaton"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/third-party/include"
+					"path" : "/home/pi/Desktop/serial_communicaton/third-party/include"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "11"
-			},
 			"sourceIndexes" : 
 			[
 				0,

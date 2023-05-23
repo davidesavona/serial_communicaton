@@ -1,27 +1,27 @@
 [
 {
-  "directory": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build",
-  "command": "/usr/bin/clang++  -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/third-party/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/serial.dir/serial.cc.o -c /Users/alessandrofoglia/Desktop/youtube-serail-tutorial/serial.cc",
-  "file": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/serial.cc"
+  "directory": "/home/pi/Desktop/serial_communicaton/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/arduino-communication.dir/test.cpp.o -c /home/pi/Desktop/serial_communicaton/test.cpp",
+  "file": "/home/pi/Desktop/serial_communicaton/test.cpp"
 },
 {
-  "directory": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build",
-  "command": "/usr/bin/clang++  -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/third-party/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/serial.dir/list_ports_linux.cc.o -c /Users/alessandrofoglia/Desktop/youtube-serail-tutorial/list_ports_linux.cc",
-  "file": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/list_ports_linux.cc"
+  "directory": "/home/pi/Desktop/serial_communicaton/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/arduino-communication.dir/motor.cpp.o -c /home/pi/Desktop/serial_communicaton/motor.cpp",
+  "file": "/home/pi/Desktop/serial_communicaton/motor.cpp"
 },
 {
-  "directory": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build",
-  "command": "/usr/bin/clang++  -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/third-party/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/serial.dir/unix.cc.o -c /Users/alessandrofoglia/Desktop/youtube-serail-tutorial/unix.cc",
-  "file": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/unix.cc"
+  "directory": "/home/pi/Desktop/serial_communicaton/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/serial.cc.o -c /home/pi/Desktop/serial_communicaton/serial.cc",
+  "file": "/home/pi/Desktop/serial_communicaton/serial.cc"
 },
 {
-  "directory": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build",
-  "command": "/usr/bin/clang++  -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/third-party/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/arduino-communication.dir/test.cpp.o -c /Users/alessandrofoglia/Desktop/youtube-serail-tutorial/test.cpp",
-  "file": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/test.cpp"
+  "directory": "/home/pi/Desktop/serial_communicaton/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/list_ports_linux.cc.o -c /home/pi/Desktop/serial_communicaton/list_ports_linux.cc",
+  "file": "/home/pi/Desktop/serial_communicaton/list_ports_linux.cc"
 },
 {
-  "directory": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build",
-  "command": "/usr/bin/clang++  -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial -I/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/third-party/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/arduino-communication.dir/motor.cpp.o -c /Users/alessandrofoglia/Desktop/youtube-serail-tutorial/motor.cpp",
-  "file": "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/motor.cpp"
+  "directory": "/home/pi/Desktop/serial_communicaton/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/unix.cc.o -c /home/pi/Desktop/serial_communicaton/unix.cc",
+  "file": "/home/pi/Desktop/serial_communicaton/unix.cc"
 }
 ]

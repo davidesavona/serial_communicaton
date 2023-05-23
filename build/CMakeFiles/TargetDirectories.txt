@@ -1,4 +1,4 @@
-/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build/CMakeFiles/serial.dir
-/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build/CMakeFiles/arduino-communication.dir
-/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build/CMakeFiles/edit_cache.dir
-/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/serial_communicaton/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/serial_communicaton/build/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/serial_communicaton/build/CMakeFiles/arduino-communication.dir
+/home/pi/Desktop/serial_communicaton/build/CMakeFiles/serial.dir

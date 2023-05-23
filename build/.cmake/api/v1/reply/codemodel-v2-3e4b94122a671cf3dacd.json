@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -41,14 +40,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "arduino-communication::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-arduino-communication-Debug-857b4c6a54d5b9547499.json",
+					"jsonFile" : "target-arduino-communication-Debug-ad7d13c2c3d918f5b7bd.json",
 					"name" : "arduino-communication",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "serial::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-serial-Debug-bd96158c7eb87f6f930b.json",
+					"jsonFile" : "target-serial-Debug-b0bf2a9bd3b9cea7791c.json",
 					"name" : "serial",
 					"projectIndex" : 0
 				}
@@ -58,12 +57,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial/build",
-		"source" : "/Users/alessandrofoglia/Desktop/youtube-serail-tutorial"
+		"build" : "/home/pi/Desktop/serial_communicaton/build",
+		"source" : "/home/pi/Desktop/serial_communicaton"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 1
 	}
 }
