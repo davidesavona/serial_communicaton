@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/arduino-communication.dir/test.cpp.o" "CMakeFiles/arduino-communication.dir/motor.cpp.o" -o arduino-communication  libserial.a 
