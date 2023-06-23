@@ -6,126 +6,85 @@ namespace motor{
 
     serial::Serial my_serial;
     
-
     void startMotor(void){
     
         unsigned long int message = 0;
-        std::string s;
+        std::string s = "";
         size_t startBytes;
-
-        std::string check = "Ok";
-
-        my_serial.flushOutput();
+        char startMarker = '<';
+        char endMarker = '>';
 
         message |= (1 << 16);
-        s = std::to_string(message);
+        s.push_back(startMarker);
+        s += std::to_string(message);
+        s.push_back(endMarker);
+            
         startBytes = my_serial.write(s);
-        
-        std::this_thread::sleep_for(std::chrono::milliseconds(40));
-        my_serial.flushInput();
-        s = my_serial.read(2);
-
-        if(!(s.compare(check))){
-
-        //std::cout << s << std::endl;
-        //std::cout << "Motor on" << std::endl;
-
-        }
-
-        else{
-
-            //std::cout << "ERROR: message corrupted" << std::endl;
-
-        }
 
     }
 
     void stopMotor(void){
 
         unsigned long int message = 0;
-        std::string s;
+        std::string s = "";
         size_t startBytes;
-        std::string check = "Ok";
-
-        my_serial.flushOutput();
+        char startMarker = '<';
+        char endMarker = '>';
 
         message |= ((1 << 17) | (1 << 16));
-        s = std::to_string(message);
+        s.push_back(startMarker);
+        s += std::to_string(message);
+        s.push_back(endMarker);
+
         startBytes = my_serial.write(s);
-
-        std::this_thread::sleep_for(std::chrono::milliseconds(40));
-        my_serial.flushInput();
-        s = my_serial.read(2);
-        
-        if(!s.compare(check)){
-        
-        std::cout << s << std::endl;
-        std::cout << "Motor off" << std::endl;
-
-        }
-        else{
-
-            std::cout << "ERROR: message corrupted" << std::endl;
-        }
 
     }
 
     void setDutyCycle(int dutyCycle, int option){
 
         unsigned long int message = 0;
-        std::string s;
+        std::string s = "";
         size_t startBytes;
-        std::string check = "Ok";
-
-        my_serial.flushOutput();
+        char startMarker = '<';
+        char endMarker = '>';
 
         if(dutyCycle <= 100 && dutyCycle >= 0){
 
-        if(option){
+            if(option){
 
-            message |= ((1 << 17) | (1 << 24));
-            message += dutyCycle;
-            s = std::to_string(message);
-            startBytes = my_serial.write(s);
+                message |= ((1 << 17) | (1 << 24));
+                message = message + dutyCycle;
 
-            //std::cout << "Duty cycle: " << dutyCycle << std::endl;
-        }
+                s.push_back(startMarker);
+                s += std::to_string(message);
+                s.push_back(endMarker);
 
-        else if(!(option)){
+                startBytes = my_serial.write(s);
 
-            message |= (1 << 17);
-            message += dutyCycle;
-            s = std::to_string(message);
-            startBytes = my_serial.write(s);
+                std::cout << "Duty cycle: " << dutyCycle << std::endl;
 
-            std::cout << "Duty cycle: " << dutyCycle << std::endl;
-        }
-        else{
+            }
+            else if(!(option)){
+                
+                message |= (1 << 17);
+                message += dutyCycle;
 
-            //std::cout << "ERROR: requested task is not applicable" << std::endl;
-        }
+                s.push_back(startMarker);
+                s += std::to_string(message);
+                s.push_back(endMarker);
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(40));
-        my_serial.flushInput();
-        s = my_serial.read(2);
+                startBytes = my_serial.write(s);
 
-        if(!(s.compare(check))){
+                std::cout << "Duty cycle: " << dutyCycle << std::endl;
+            }
+            else{
 
-        //std::cout << s << std::endl;
-        //std::cout << "Duty cycle set" << std::endl;
-
+                std::cout << "ERROR: requested task is not applicable" << std::endl;
+            }
         }
         else{
 
-            //std::cout << "ERROR: message corrupted" << std::endl;
-        }
-
-        
-
-        }
-        else{
-
-            //std::cout << "ERROR: duty cycle is not applicable" << std::endl;
+            std::cout << "ERROR: duty cycle is not applicable" << std::endl;
     
         }
 
@@ -134,50 +93,73 @@ namespace motor{
     void configPWM(int frequency, int resolution){
 
         unsigned long int message = 0;
-        std::string s;
+        std::string s = "";
         size_t startBytes;
-        std::string check = "Ok";
-
-        my_serial.flushOutput();
+        char startMarker = '<';
+        char endMarker = '>';
 
         message |= (1 << 18) | resolution | ((frequency & 0x02FF) << 4);
-        s = std::to_string(message);
+        s.push_back(startMarker);
+        s += std::to_string(message);
+        s.push_back(endMarker);
+        
         startBytes = my_serial.write(s);
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(40));
-        my_serial.flushInput();
-        s = my_serial.read(2);
-
-        if(!(s.compare(check))){
-
-        std::cout << s << std::endl;
         std::cout << "Frequency: " << frequency*1000 << " Hz" << std::endl;
         std::cout << "Resolution: " << resolution << std::endl;
 
+    }
+
+    float getCurrent(void){
+
+        float current;
+        unsigned long int message = 0;
+        std::string s = "";
+        size_t startBytes;
+        char startMarker = '<';
+        char endMarker = '>';
+
+        char rc;
+        int dim = 32;
+        char arr[dim];
+        bool newData = false;
+        int ndx = 0;
+        char endLine = '\n';
+
+        message |= ((1 << 18) | (1 << 16));
+
+        s += startMarker;
+        s += std::to_string(message);
+        s += endMarker;
+        startBytes = my_serial.write(s);
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
+        
+        while((my_serial.available() > 2) || (newData == false)){
+
+        s = my_serial.read(1);
+        arr[ndx] = s.at(0);
+
+        if(arr[ndx] != endLine){
+
+            ndx++;
+
+            if(ndx >= dim){
+
+                ndx = dim - 1;
+            }
         }
         else{
 
-            std::cout << "ERROR: message corrupted" << std::endl;
+            arr[ndx] = '\0';
+            ndx = 0;
+            newData = true;
+
         }
-    }
-
-    int getCurrent(void){
-
-        int current;
-        unsigned long int message = 0;
-        std::string s;
-        size_t startBytes;
+        }
         
-        my_serial.flushOutput();
-
-        message |= ((1 << 18) | (1 << 16)) ;
-        s = std::to_string(message);
-        startBytes = my_serial.write(s);
-
-        std::this_thread::sleep_for(std::chrono::milliseconds(50));
-        my_serial.flushInput();
-        s = my_serial.read(4);
-        current = std::stof(s);
+        current = atof(arr);
+        newData = false;
 
         return current;
     }
@@ -188,6 +170,8 @@ namespace motor{
         my_serial.setBaudrate(baudrate);
         my_serial.setTimeout(timeout);
         my_serial.open();
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
 
     }
 
