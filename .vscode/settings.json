@@ -66,7 +66,12 @@
         "chrono": "cpp",
         "compare": "cpp",
         "concepts": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "*.tcc": "cpp",
+        "memory_resource": "cpp",
+        "random": "cpp",
+        "utility": "cpp",
+        "stop_token": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

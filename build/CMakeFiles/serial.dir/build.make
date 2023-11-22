@@ -79,41 +79,41 @@ include CMakeFiles/serial.dir/flags.make
 CMakeFiles/serial.dir/serial.cc.o: CMakeFiles/serial.dir/flags.make
 CMakeFiles/serial.dir/serial.cc.o: ../serial.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/serial_communicaton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/serial.dir/serial.cc.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial.dir/serial.cc.o -c /home/pi/Desktop/serial_communicaton/serial.cc
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial.dir/serial.cc.o -c /home/pi/Desktop/serial_communicaton/serial.cc
 
 CMakeFiles/serial.dir/serial.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial.dir/serial.cc.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/serial.cc > CMakeFiles/serial.dir/serial.cc.i
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/serial.cc > CMakeFiles/serial.dir/serial.cc.i
 
 CMakeFiles/serial.dir/serial.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial.dir/serial.cc.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/serial.cc -o CMakeFiles/serial.dir/serial.cc.s
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/serial.cc -o CMakeFiles/serial.dir/serial.cc.s
 
 CMakeFiles/serial.dir/list_ports_linux.cc.o: CMakeFiles/serial.dir/flags.make
 CMakeFiles/serial.dir/list_ports_linux.cc.o: ../list_ports_linux.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/serial_communicaton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/serial.dir/list_ports_linux.cc.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial.dir/list_ports_linux.cc.o -c /home/pi/Desktop/serial_communicaton/list_ports_linux.cc
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial.dir/list_ports_linux.cc.o -c /home/pi/Desktop/serial_communicaton/list_ports_linux.cc
 
 CMakeFiles/serial.dir/list_ports_linux.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial.dir/list_ports_linux.cc.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/list_ports_linux.cc > CMakeFiles/serial.dir/list_ports_linux.cc.i
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/list_ports_linux.cc > CMakeFiles/serial.dir/list_ports_linux.cc.i
 
 CMakeFiles/serial.dir/list_ports_linux.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial.dir/list_ports_linux.cc.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/list_ports_linux.cc -o CMakeFiles/serial.dir/list_ports_linux.cc.s
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/list_ports_linux.cc -o CMakeFiles/serial.dir/list_ports_linux.cc.s
 
 CMakeFiles/serial.dir/unix.cc.o: CMakeFiles/serial.dir/flags.make
 CMakeFiles/serial.dir/unix.cc.o: ../unix.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/serial_communicaton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/serial.dir/unix.cc.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial.dir/unix.cc.o -c /home/pi/Desktop/serial_communicaton/unix.cc
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial.dir/unix.cc.o -c /home/pi/Desktop/serial_communicaton/unix.cc
 
 CMakeFiles/serial.dir/unix.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial.dir/unix.cc.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/unix.cc > CMakeFiles/serial.dir/unix.cc.i
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/unix.cc > CMakeFiles/serial.dir/unix.cc.i
 
 CMakeFiles/serial.dir/unix.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial.dir/unix.cc.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/unix.cc -o CMakeFiles/serial.dir/unix.cc.s
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/unix.cc -o CMakeFiles/serial.dir/unix.cc.s
 
 # Object files for target serial
 serial_OBJECTS = \

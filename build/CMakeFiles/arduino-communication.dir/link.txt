@@ -1,1 +1,1 @@
-/usr/bin/aarch64-linux-gnu-g++ -g CMakeFiles/arduino-communication.dir/test.cpp.o CMakeFiles/arduino-communication.dir/motor.cpp.o -o arduino-communication  libserial.a 
+/usr/bin/clang++-11 -g CMakeFiles/arduino-communication.dir/test.cpp.o CMakeFiles/arduino-communication.dir/motor.cpp.o -o arduino-communication  libserial.a 

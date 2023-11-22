@@ -18,23 +18,23 @@ namespace motor{
         my_serial.flushOutput();
 
         message |= (1 << 16);
-        s = std::to_string(message);
+        s = std::to_string(message)+"\n";
         startBytes = my_serial.write(s);
         
         std::this_thread::sleep_for(std::chrono::milliseconds(40));
         my_serial.flushInput();
         s = my_serial.read(2);
 
-        if(!(s.compare(check))){
+        if(!s.compare(check)){
 
-        //std::cout << s << std::endl;
-        //std::cout << "Motor on" << std::endl;
+        std::cout << s << std::endl;
+        std::cout << "Motor on" << std::endl;
 
         }
 
         else{
 
-            //std::cout << "ERROR: message corrupted" << std::endl;
+            std::cout << "ERROR: message corrupted" << std::endl;
 
         }
 
@@ -50,7 +50,7 @@ namespace motor{
         my_serial.flushOutput();
 
         message |= ((1 << 17) | (1 << 16));
-        s = std::to_string(message);
+        s = std::to_string(message)+"\n";
         startBytes = my_serial.write(s);
 
         std::this_thread::sleep_for(std::chrono::milliseconds(40));
@@ -67,7 +67,7 @@ namespace motor{
 
             std::cout << "ERROR: message corrupted" << std::endl;
         }
-
+    //my_serial.close();
     }
 
     void setDutyCycle(int dutyCycle, int option){

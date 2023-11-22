@@ -79,28 +79,28 @@ include CMakeFiles/arduino-communication.dir/flags.make
 CMakeFiles/arduino-communication.dir/test.cpp.o: CMakeFiles/arduino-communication.dir/flags.make
 CMakeFiles/arduino-communication.dir/test.cpp.o: ../test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/serial_communicaton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/arduino-communication.dir/test.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduino-communication.dir/test.cpp.o -c /home/pi/Desktop/serial_communicaton/test.cpp
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduino-communication.dir/test.cpp.o -c /home/pi/Desktop/serial_communicaton/test.cpp
 
 CMakeFiles/arduino-communication.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arduino-communication.dir/test.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/test.cpp > CMakeFiles/arduino-communication.dir/test.cpp.i
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/test.cpp > CMakeFiles/arduino-communication.dir/test.cpp.i
 
 CMakeFiles/arduino-communication.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arduino-communication.dir/test.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/test.cpp -o CMakeFiles/arduino-communication.dir/test.cpp.s
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/test.cpp -o CMakeFiles/arduino-communication.dir/test.cpp.s
 
 CMakeFiles/arduino-communication.dir/motor.cpp.o: CMakeFiles/arduino-communication.dir/flags.make
 CMakeFiles/arduino-communication.dir/motor.cpp.o: ../motor.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/serial_communicaton/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/arduino-communication.dir/motor.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduino-communication.dir/motor.cpp.o -c /home/pi/Desktop/serial_communicaton/motor.cpp
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduino-communication.dir/motor.cpp.o -c /home/pi/Desktop/serial_communicaton/motor.cpp
 
 CMakeFiles/arduino-communication.dir/motor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arduino-communication.dir/motor.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/motor.cpp > CMakeFiles/arduino-communication.dir/motor.cpp.i
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/serial_communicaton/motor.cpp > CMakeFiles/arduino-communication.dir/motor.cpp.i
 
 CMakeFiles/arduino-communication.dir/motor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arduino-communication.dir/motor.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/motor.cpp -o CMakeFiles/arduino-communication.dir/motor.cpp.s
+	/usr/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/serial_communicaton/motor.cpp -o CMakeFiles/arduino-communication.dir/motor.cpp.s
 
 # Object files for target arduino-communication
 arduino__communication_OBJECTS = \

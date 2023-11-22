@@ -217,7 +217,7 @@ int main()
 
     motor::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
     motor::startMotor();
-
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     // for(int i = 0; i < 5; i++){
 
     //     if(i%5 == 0){
@@ -239,28 +239,18 @@ int main()
 
     // motor::stopMotor();
 
-    for(int i = 10; i <= 50; i++){
+    // for(int i = 10; i <= 50; i++){
 
-        if(i%5 == 0){
+    //     if(i%5 == 0){
 
-            motor::setDutyCycle(i, 0);
-            current = motor::getCurrent();
-            std::cout << current << " A" << std::endl;
-        }
+    //         motor::setDutyCycle(i, 0);
+    //         //current = motor::getCurrent();
+    //         std::cout << current << " A" << std::endl;
+    //     }
 
-    }
+    // }
 
-    for(int j = 50; j >= 10; j--){
-
-        if(j%5 == 0){
-
-            motor::setDutyCycle(j, 0);
-            current = motor::getCurrent();
-            std::cout << current << " A" << std::endl;
-        }
-
-    }
-
+   
     motor::stopMotor();
 
     return 0;
