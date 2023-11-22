@@ -12,7 +12,7 @@ namespace motor{
     void stopMotor(void);
     void setDutyCycle(int dutycycle, int option);
     void configPWM(int frequency, int resolution);
-    float getCurrent(void);
+    std::string getCurrent(void);
     void InitMotor(std::string port, int baudrate, serial::Timeout timeout);
 
 }

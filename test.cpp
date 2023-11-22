@@ -212,12 +212,18 @@ int main()
 
     // }
 
-    float current;
+    std::string  current;
     int dc;
 
     motor::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
     motor::startMotor();
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    while(1){
+    current = motor::getCurrent();
+    std::cout<<current<<"-->"<<std::endl;
+    if(current.empty()) std::cout<<"error"<<std::endl;
+    std::cout << std::stof(current) << " A" << std::endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(20));
+    }
     // for(int i = 0; i < 5; i++){
 
     //     if(i%5 == 0){
