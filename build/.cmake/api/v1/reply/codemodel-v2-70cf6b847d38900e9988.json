@@ -40,14 +40,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "arduino-communication::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-arduino-communication-Debug-ad7d13c2c3d918f5b7bd.json",
+					"jsonFile" : "target-arduino-communication-Debug-df42a2ddb500e8d3910d.json",
 					"name" : "arduino-communication",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "serial::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-serial-Debug-b0bf2a9bd3b9cea7791c.json",
+					"jsonFile" : "target-serial-Debug-9cea8c12d30d7e5c806a.json",
 					"name" : "serial",
 					"projectIndex" : 0
 				}

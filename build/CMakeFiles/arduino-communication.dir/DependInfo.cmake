@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/Desktop/serial_communicaton/motor.cpp" "/home/pi/Desktop/serial_communicaton/build/CMakeFiles/arduino-communication.dir/motor.cpp.o"
+  "/home/pi/Desktop/serial_communicaton/motorDriver.cpp" "/home/pi/Desktop/serial_communicaton/build/CMakeFiles/arduino-communication.dir/motorDriver.cpp.o"
   "/home/pi/Desktop/serial_communicaton/test.cpp" "/home/pi/Desktop/serial_communicaton/build/CMakeFiles/arduino-communication.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

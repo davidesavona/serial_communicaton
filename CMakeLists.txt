@@ -12,11 +12,11 @@ include_directories(third-party/include)
 
 set(serial_SRCS serial.cc serial.h 
     v8stdint.h list_ports_linux.cc
-    motor.h)
+    motorDriver.h)
 list(APPEND serial_SRCS unix.cc)
 
 add_library(serial ${serial_SRCS})
 target_link_libraries(serial )
 
-add_executable(arduino-communication test.cpp motor.cpp motor.h)
+add_executable(arduino-communication test.cpp motorDriver.cpp motorDriver.h)
 target_link_libraries(arduino-communication serial)

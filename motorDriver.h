@@ -6,7 +6,7 @@
 #include "serial.h"
 
 
-namespace motor{
+namespace motorDriver{
 
     void startMotor(void);
     void stopMotor(void);

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/Desktop/serial_communicaton/motor.h
-iostream
--
-string
--
+/home/pi/Desktop/serial_communicaton/motorDriver.cpp
 serial.h
 /home/pi/Desktop/serial_communicaton/serial.h
+iostream
+-
+thread
+/home/pi/Desktop/serial_communicaton/thread
 
 /home/pi/Desktop/serial_communicaton/serial.h
 limits
@@ -31,20 +31,6 @@ stdexcept
 -
 v8stdint.h
 /home/pi/Desktop/serial_communicaton/v8stdint.h
-
-/home/pi/Desktop/serial_communicaton/test.cpp
-serial.h
-/home/pi/Desktop/serial_communicaton/serial.h
-iostream
--
-bitset
--
-string
--
-thread
-/home/pi/Desktop/serial_communicaton/thread
-motor.h
-/home/pi/Desktop/serial_communicaton/motor.h
 
 /home/pi/Desktop/serial_communicaton/v8stdint.h
 stddef.h

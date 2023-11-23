@@ -182,32 +182,32 @@ list_ports_linux.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/list_ports_linux.cc.s
 .PHONY : list_ports_linux.cc.s
 
-motor.o: motor.cpp.o
+motorDriver.o: motorDriver.cpp.o
 
-.PHONY : motor.o
+.PHONY : motorDriver.o
 
 # target to build an object file
-motor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino-communication.dir/build.make CMakeFiles/arduino-communication.dir/motor.cpp.o
-.PHONY : motor.cpp.o
+motorDriver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino-communication.dir/build.make CMakeFiles/arduino-communication.dir/motorDriver.cpp.o
+.PHONY : motorDriver.cpp.o
 
-motor.i: motor.cpp.i
+motorDriver.i: motorDriver.cpp.i
 
-.PHONY : motor.i
+.PHONY : motorDriver.i
 
 # target to preprocess a source file
-motor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino-communication.dir/build.make CMakeFiles/arduino-communication.dir/motor.cpp.i
-.PHONY : motor.cpp.i
+motorDriver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino-communication.dir/build.make CMakeFiles/arduino-communication.dir/motorDriver.cpp.i
+.PHONY : motorDriver.cpp.i
 
-motor.s: motor.cpp.s
+motorDriver.s: motorDriver.cpp.s
 
-.PHONY : motor.s
+.PHONY : motorDriver.s
 
 # target to generate assembly for a file
-motor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino-communication.dir/build.make CMakeFiles/arduino-communication.dir/motor.cpp.s
-.PHONY : motor.cpp.s
+motorDriver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino-communication.dir/build.make CMakeFiles/arduino-communication.dir/motorDriver.cpp.s
+.PHONY : motorDriver.cpp.s
 
 serial.o: serial.cc.o
 
@@ -303,9 +303,9 @@ help:
 	@echo "... list_ports_linux.o"
 	@echo "... list_ports_linux.i"
 	@echo "... list_ports_linux.s"
-	@echo "... motor.o"
-	@echo "... motor.i"
-	@echo "... motor.s"
+	@echo "... motorDriver.o"
+	@echo "... motorDriver.i"
+	@echo "... motorDriver.s"
 	@echo "... serial.o"
 	@echo "... serial.i"
 	@echo "... serial.s"

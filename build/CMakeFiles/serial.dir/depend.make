@@ -7,7 +7,6 @@ CMakeFiles/serial.dir/list_ports_linux.cc.o: ../v8stdint.h
 
 CMakeFiles/serial.dir/serial.cc.o: ../serial.cc
 CMakeFiles/serial.dir/serial.cc.o: ../serial.h
-CMakeFiles/serial.dir/serial.cc.o: ../serial/impl/win.h
 CMakeFiles/serial.dir/serial.cc.o: ../unix.h
 CMakeFiles/serial.dir/serial.cc.o: ../v8stdint.h
 

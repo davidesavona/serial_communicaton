@@ -126,7 +126,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "motor.h",
+			"path" : "motorDriver.h",
 			"sourceGroupIndex" : 1
 		},
 		{

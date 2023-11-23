@@ -2,7 +2,7 @@
 #include <iostream>
 #include "thread"
 
-namespace motor{
+namespace motorDriver{
 
     serial::Serial my_serial;
     

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/arduino-communication.dir/motor.cpp.o"
+  "CMakeFiles/arduino-communication.dir/motorDriver.cpp.o"
   "CMakeFiles/arduino-communication.dir/test.cpp.o"
   "arduino-communication"
   "arduino-communication.pdb"
