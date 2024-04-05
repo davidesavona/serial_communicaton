@@ -9,12 +9,18 @@
 int main()
 {
     
-//*************************************** Current reading*************************************
-    // std::string  current;
-    // int dc;
 
-    // motorDriver::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
-    // motorDriver::startMotor();
+    std::string  current;
+    int dc;
+
+    motorDriver::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
+    //motorDriver::startMotor();
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    motorDriver::stopMotor();
+
+    
+    //*************************************** Current reading*************************************
+    
     // while(1){
     // current = motorDriver::getCurrent();
     // //std::cout<<"Current: "<<current<<std::endl;
