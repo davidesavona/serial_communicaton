@@ -13,10 +13,16 @@ int main()
     std::string  current;
     int dc;
 
-    motorDriver::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
-    //motorDriver::startMotor();
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    motorDriver::InitMotor("/dev/ttyACM0", 115200, serial::Timeout::simpleTimeout(3000));
+    //
+    while(1){
+    motorDriver::startMotor();
+
+    std::cout<<"ON"<<std::endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     motorDriver::stopMotor();
+    std::cout<<"OFF"<<std::endl;
+    }
 
     
     //*************************************** Current reading*************************************
@@ -71,7 +77,7 @@ int main()
     // }
 
    
-    motorDriver::stopMotor();
+    //motorDriver::stopMotor();
 
     return 0;
 
