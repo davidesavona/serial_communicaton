@@ -1,27 +1,27 @@
 [
 {
   "directory": "/home/pi/Desktop/serial_communicaton/build",
-  "command": "/usr/bin/clang++-11  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/arduino-communication.dir/test.cpp.o -c /home/pi/Desktop/serial_communicaton/test.cpp",
+  "command": "/usr/bin/arm-linux-gnueabihf-g++ -I. -I../ -I../third-party/include -g -std=gnu++11 -o CMakeFiles/arduino-communication.dir/test.cpp.o -c /home/pi/Desktop/serial_communicaton/test.cpp",
   "file": "/home/pi/Desktop/serial_communicaton/test.cpp"
 },
 {
   "directory": "/home/pi/Desktop/serial_communicaton/build",
-  "command": "/usr/bin/clang++-11  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/arduino-communication.dir/motorDriver.cpp.o -c /home/pi/Desktop/serial_communicaton/motorDriver.cpp",
+  "command": "/usr/bin/arm-linux-gnueabihf-g++ -I. -I../ -I../third-party/include -g -std=gnu++11 -o CMakeFiles/arduino-communication.dir/motorDriver.cpp.o -c /home/pi/Desktop/serial_communicaton/motorDriver.cpp",
   "file": "/home/pi/Desktop/serial_communicaton/motorDriver.cpp"
 },
 {
   "directory": "/home/pi/Desktop/serial_communicaton/build",
-  "command": "/usr/bin/clang++-11  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/serial.cc.o -c /home/pi/Desktop/serial_communicaton/serial.cc",
+  "command": "/usr/bin/arm-linux-gnueabihf-g++ -I. -I../ -I../third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/serial.cc.o -c /home/pi/Desktop/serial_communicaton/serial.cc",
   "file": "/home/pi/Desktop/serial_communicaton/serial.cc"
 },
 {
   "directory": "/home/pi/Desktop/serial_communicaton/build",
-  "command": "/usr/bin/clang++-11  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/list_ports_linux.cc.o -c /home/pi/Desktop/serial_communicaton/list_ports_linux.cc",
+  "command": "/usr/bin/arm-linux-gnueabihf-g++ -I. -I../ -I../third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/list_ports_linux.cc.o -c /home/pi/Desktop/serial_communicaton/list_ports_linux.cc",
   "file": "/home/pi/Desktop/serial_communicaton/list_ports_linux.cc"
 },
 {
   "directory": "/home/pi/Desktop/serial_communicaton/build",
-  "command": "/usr/bin/clang++-11  -I/home/pi/Desktop/serial_communicaton/build -I/home/pi/Desktop/serial_communicaton -I/home/pi/Desktop/serial_communicaton/third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/unix.cc.o -c /home/pi/Desktop/serial_communicaton/unix.cc",
+  "command": "/usr/bin/arm-linux-gnueabihf-g++ -I. -I../ -I../third-party/include -g -std=gnu++11 -o CMakeFiles/serial.dir/unix.cc.o -c /home/pi/Desktop/serial_communicaton/unix.cc",
   "file": "/home/pi/Desktop/serial_communicaton/unix.cc"
 }
 ]

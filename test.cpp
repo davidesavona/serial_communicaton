@@ -9,25 +9,29 @@
 int main()
 {
     
+//*************************************** Current reading*************************************
+    // std::string  current;
+    // int dc;
 
-    std::string  current;
-    int dc;
+    // motorDriver::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
+    // motorDriver::startMotor();
+    // while(1){
+    // current = motorDriver::getCurrent();
+    // //std::cout<<"Current: "<<current<<std::endl;
+    // char arr[current.length() + 1]; 
+    // char* arrEnd;
 
-    motorDriver::InitMotor("/dev/ttyUSB0", 115200, serial::Timeout::simpleTimeout(3000));
-    motorDriver::startMotor();
-    while(1){
-    current = motorDriver::getCurrent();
-    std::cout<<current<<"-->"<<std::endl;
-    char arr[current.length() + 1]; 
-    char* arrEnd;
+	// strcpy(arr, current.c_str()); 
+    // if(current.empty()) std::cout<<"error"<<std::endl;
 
-	strcpy(arr, current.c_str()); 
-    if(current.empty()) std::cout<<"error"<<std::endl;
+    // //std::cout  << std::strtof(arr,&arrEnd) << " A" << std::endl;
+    // std::cout <<"Current:"<< std::stof(current) << " A" << std::endl;
+    // std::this_thread::sleep_for(std::chrono::milliseconds(20));
+    // }
 
-     //std::cout << std::strtof(arr,&arrEnd) << " A" << std::endl;
-    std::cout << std::stof(current) << " A" << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(20));
-    }
+    //**************************************************************************************************************
+    
+    
     // for(int i = 0; i < 5; i++){
 
     //     if(i%5 == 0){

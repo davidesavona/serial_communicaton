@@ -1,1 +1,0 @@
-/usr/bin/clang++-11 -g CMakeFiles/arduino-communication.dir/test.cpp.o CMakeFiles/arduino-communication.dir/motorDriver.cpp.o -o arduino-communication  libserial.a 

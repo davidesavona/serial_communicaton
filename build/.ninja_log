@@ -1,0 +1,16 @@
+# ninja log v5
+1	2840	1712328406788488607	CMakeFiles/arduino-communication.dir/test.cpp.o	cb23432a46365082
+6	3182	1712328407132499759	CMakeFiles/serial.dir/unix.cc.o	3624e7dad299c274
+4	3187	1712328407132499759	CMakeFiles/serial.dir/serial.cc.o	2f0e8fdda4f3babc
+4	3352	1712328407300505193	CMakeFiles/serial.dir/list_ports_linux.cc.o	bcda7112d924c2c
+3353	3495	1712328407444509851	libserial.a	a095d86e92d62653
+3	3540	1712328407488511274	CMakeFiles/arduino-communication.dir/motorDriver.cpp.o	5689a86dc566e005
+3540	3854	1712328407804521496	arduino-communication	c9f54b895be9311
+6	1450	1712328454645909787	CMakeFiles/arduino-communication.dir/test.cpp.o	cb23432a46365082
+1450	1733	1712328454929917473	arduino-communication	c9f54b895be9311
+5	1467	1712328527919616926	CMakeFiles/arduino-communication.dir/test.cpp.o	cb23432a46365082
+1467	1751	1712328528255623543	arduino-communication	c9f54b895be9311
+8	1404	1712328570252370835	CMakeFiles/arduino-communication.dir/test.cpp.o	cb23432a46365082
+1405	1707	1712328570552375613	arduino-communication	c9f54b895be9311
+5	1208	1712328786678072868	CMakeFiles/arduino-communication.dir/test.cpp.o	cb23432a46365082
+1208	1485	1712328786954073104	arduino-communication	c9f54b895be9311
