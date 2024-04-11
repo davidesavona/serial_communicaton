@@ -19,4 +19,4 @@ add_library(serial ${serial_SRCS})
 target_link_libraries(serial )
 
 add_executable(arduino-communication test.cpp motorDriver.cpp motorDriver.h)
-target_link_libraries(arduino-communication serial)
+target_link_libraries(arduino-communication serial pthread)
